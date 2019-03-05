@@ -52,6 +52,7 @@ class InsertViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        satisfaction.isUserInteractionEnabled = false
         let dbURL = try! fileManager .url(
             for: .documentDirectory,
             in: .userDomainMask,
