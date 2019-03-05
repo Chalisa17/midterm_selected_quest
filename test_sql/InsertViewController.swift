@@ -15,7 +15,7 @@ class InsertViewController: UIViewController {
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var inputTextField: UITextField!
     @IBOutlet weak var satisfaction: UITextField!
-    let fileName = "db5.sqlite"
+    let fileName = "db6.sqlite"
     let fileManager = FileManager .default
     var dbPath = String()
     var sql = String()
@@ -23,6 +23,16 @@ class InsertViewController: UIViewController {
     var stmt: OpaquePointer?
     var pointer: OpaquePointer?
     
+    @IBAction func bad(_ sender: Any) {
+        satisfaction.text = "ไม่พอใจ"
+        
+    }
+    @IBAction func merely(_ sender: Any) {
+        satisfaction.text = "เฉยๆ"
+    }
+    @IBAction func smile(_ sender: Any) {
+        satisfaction.text = "ยิ้ม"
+    }
     @IBAction func savedate(_ sender: Any) {
         let name1 = name.text! as NSString
         let phone1 = phone.text! as NSString

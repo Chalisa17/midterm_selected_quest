@@ -11,7 +11,7 @@ import SQLite3
 
 class ViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
-    let fileName = "db5.sqlite"
+    let fileName = "db6.sqlite"
     let fileManager = FileManager.default
     var dbPath = String()
     var sql = String()
